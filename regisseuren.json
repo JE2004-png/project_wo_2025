@@ -6,7 +6,7 @@
       "age": 53,
       "isActive": true,
       "birthDate": "1970-07-30",
-      "profileImageUrl": "https://example.com/images/nolan.jpg",
+      "profileImageUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/nolan.jpg",
       "genre": "Science Fiction",
       "hobbies": ["Photography", "Writing", "Traveling"],
       "notableWork": {
@@ -14,7 +14,7 @@
         "title": "Inception",
         "releaseYear": 2010,
         "isAwardWinning": true,
-        "posterUrl": "https://example.com/images/inception.jpg"
+        "posterUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/inception.jpg"
       }
     },
     {
@@ -24,7 +24,7 @@
       "age": 84,
       "isActive": false,
       "birthDate": "1939-04-07",
-      "profileImageUrl": "https://example.com/images/coppola.jpg",
+      "profileImageUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/coppola.jpg",
       "genre": "Crime",
       "hobbies": ["Winemaking", "Writing", "Traveling"],
       "notableWork": {
@@ -32,7 +32,7 @@
         "title": "The Godfather",
         "releaseYear": 1972,
         "isAwardWinning": true,
-        "posterUrl": "https://example.com/images/godfather.jpg"
+        "posterUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/godfather.jpg"
       }
     },
     {
@@ -42,7 +42,7 @@
       "age": 60,
       "isActive": true,
       "birthDate": "1963-03-27",
-      "profileImageUrl": "https://example.com/images/tarantino.jpg",
+      "profileImageUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/tarantino.jpg",
       "genre": "Drama",
       "hobbies": ["Collecting vinyl records", "Watching old movies", "Writing"],
       "notableWork": {
@@ -50,7 +50,7 @@
         "title": "Pulp Fiction",
         "releaseYear": 1994,
         "isAwardWinning": true,
-        "posterUrl": "https://example.com/images/pulpfiction.jpg"
+        "posterUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/pulpfiction.jpg"
       }
     },
     {
@@ -60,7 +60,7 @@
       "age": 65,
       "isActive": false,
       "birthDate": "1959-01-28",
-      "profileImageUrl": "https://example.com/images/darabont.jpg",
+      "profileImageUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/darabont.jpg",
       "genre": "Drama",
       "hobbies": ["Reading", "Screenwriting", "Photography"],
       "notableWork": {
@@ -68,7 +68,7 @@
         "title": "The Shawshank Redemption",
         "releaseYear": 1994,
         "isAwardWinning": false,
-        "posterUrl": "https://example.com/images/shawshank.jpg"
+        "posterUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/shawshank.jpg"
       }
     },
     {
@@ -78,7 +78,7 @@
       "age": 72,
       "isActive": true,
       "birthDate": "1952-05-14",
-      "profileImageUrl": "https://example.com/images/zemeckis.jpg",
+      "profileImageUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/zemeckis.jpg",
       "genre": "Drama",
       "hobbies": ["Animation", "Storytelling", "Traveling"],
       "notableWork": {
@@ -86,7 +86,7 @@
         "title": "Forrest Gump",
         "releaseYear": 1994,
         "isAwardWinning": true,
-        "posterUrl": "https://example.com/images/forrestgump.jpg"
+        "posterUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/forrestgump.jpg"
       }
     },
     {
@@ -96,7 +96,7 @@
       "age": 61,
       "isActive": true,
       "birthDate": "1962-08-28",
-      "profileImageUrl": "https://example.com/images/fincher.jpg",
+      "profileImageUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/fincher.jpg",
       "genre": "Thriller",
       "hobbies": ["Photography", "Music Videos", "Editing"],
       "notableWork": {
@@ -104,7 +104,7 @@
         "title": "Fight Club",
         "releaseYear": 1999,
         "isAwardWinning": false,
-        "posterUrl": "https://example.com/images/fightclub.jpg"
+        "posterUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/fightclub.jpg"
       }
     },
     {
@@ -114,7 +114,7 @@
       "age": 58,
       "isActive": true,
       "birthDate": "1965-06-21",
-      "profileImageUrl": "https://example.com/images/wachowski.jpg",
+      "profileImageUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/wachowski.jpg",
       "genre": "Science Fiction",
       "hobbies": ["Writing", "Comics", "Traveling"],
       "notableWork": {
@@ -122,7 +122,7 @@
         "title": "The Matrix",
         "releaseYear": 1999,
         "isAwardWinning": true,
-        "posterUrl": "https://example.com/images/matrix.jpg"
+        "posterUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/matrix.jpg"
       }
     },
     {
@@ -132,7 +132,7 @@
       "age": 86,
       "isActive": true,
       "birthDate": "1937-11-30",
-      "profileImageUrl": "https://example.com/images/scott.jpg",
+      "profileImageUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/scott.jpg",
       "genre": "Action",
       "hobbies": ["Painting", "Storyboarding", "Traveling"],
       "notableWork": {
@@ -140,7 +140,7 @@
         "title": "Gladiator",
         "releaseYear": 2000,
         "isAwardWinning": true,
-        "posterUrl": "https://example.com/images/gladiator.jpg"
+        "posterUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/gladiator.jpg"
       }
     },
     {
@@ -150,7 +150,7 @@
       "age": 77,
       "isActive": true,
       "birthDate": "1946-12-18",
-      "profileImageUrl": "https://example.com/images/spielberg.jpg",
+      "profileImageUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/spielberg.jpg",
       "genre": "Adventure",
       "hobbies": ["Filmmaking", "Collecting", "Philanthropy"],
       "notableWork": {
@@ -158,7 +158,7 @@
         "title": "Jurassic Park",
         "releaseYear": 1993,
         "isAwardWinning": true,
-        "posterUrl": "https://example.com/images/jurassicpark.jpg"
+        "posterUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/jurassicpark.jpg"
       }
     },
     {
@@ -168,7 +168,7 @@
       "age": 69,
       "isActive": true,
       "birthDate": "1954-08-16",
-      "profileImageUrl": "https://example.com/images/cameron.jpg",
+      "profileImageUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/cameron.jpg",
       "genre": "Science Fiction",
       "hobbies": ["Deep-sea exploration", "Writing", "Photography"],
       "notableWork": {
@@ -176,7 +176,7 @@
         "title": "Avatar",
         "releaseYear": 2009,
         "isAwardWinning": true,
-        "posterUrl": "https://example.com/images/avatar.jpg"
+        "posterUrl": "https://raw.githubusercontent.com/JE2004-png/project_wo_2025/refs/heads/main/images/avatar.jpg"
       }
     }
   ]
