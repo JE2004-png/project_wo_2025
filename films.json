@@ -1,0 +1,183 @@
+[
+    {
+      "id": 1,
+      "title": "Inception",
+      "description": "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "rating": 8.8,
+      "isAvailable": true,
+      "releaseDate": "2010-07-16",
+      "posterUrl": "https://example.com/images/inception.jpg",
+      "genre": "Science Fiction",
+      "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"],
+      "director": {
+        "id": 101,
+        "name": "Christopher Nolan",
+        "isAwardWinner": true,
+        "numberOfFilms": 10,
+        "profileImageUrl": "https://example.com/images/nolan.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "rating": 9.2,
+      "isAvailable": false,
+      "releaseDate": "1972-03-24",
+      "posterUrl": "https://example.com/images/godfather.jpg",
+      "genre": "Crime",
+      "cast": ["Marlon Brando", "Al Pacino", "James Caan"],
+      "director": {
+        "id": 102,
+        "name": "Francis Ford Coppola",
+        "isAwardWinner": true,
+        "numberOfFilms": 15,
+        "profileImageUrl": "https://example.com/images/coppola.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Pulp Fiction",
+      "description": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "rating": 8.9,
+      "isAvailable": true,
+      "releaseDate": "1994-10-14",
+      "posterUrl": "https://example.com/images/pulpfiction.jpg",
+      "genre": "Drama",
+      "cast": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
+      "director": {
+        "id": 103,
+        "name": "Quentin Tarantino",
+        "isAwardWinner": true,
+        "numberOfFilms": 9,
+        "profileImageUrl": "https://example.com/images/tarantino.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "title": "The Shawshank Redemption",
+      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "rating": 9.3,
+      "isAvailable": false,
+      "releaseDate": "1994-09-23",
+      "posterUrl": "https://example.com/images/shawshank.jpg",
+      "genre": "Drama",
+      "cast": ["Tim Robbins", "Morgan Freeman"],
+      "director": {
+        "id": 104,
+        "name": "Frank Darabont",
+        "isAwardWinner": false,
+        "numberOfFilms": 5,
+        "profileImageUrl": "https://example.com/images/darabont.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "title": "The Dark Knight",
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "rating": 9.0,
+      "isAvailable": true,
+      "releaseDate": "2008-07-18",
+      "posterUrl": "https://example.com/images/darkknight.jpg",
+      "genre": "Action",
+      "cast": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+      "director": {
+        "id": 101,
+        "name": "Christopher Nolan",
+        "isAwardWinner": true,
+        "numberOfFilms": 10,
+        "profileImageUrl": "https://example.com/images/nolan.jpg"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Forrest Gump",
+      "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75.",
+      "rating": 8.8,
+      "isAvailable": true,
+      "releaseDate": "1994-07-06",
+      "posterUrl": "https://example.com/images/forrestgump.jpg",
+      "genre": "Drama",
+      "cast": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
+      "director": {
+        "id": 105,
+        "name": "Robert Zemeckis",
+        "isAwardWinner": true,
+        "numberOfFilms": 14,
+        "profileImageUrl": "https://example.com/images/zemeckis.jpg"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Fight Club",
+      "description": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+      "rating": 8.8,
+      "isAvailable": false,
+      "releaseDate": "1999-10-15",
+      "posterUrl": "https://example.com/images/fightclub.jpg",
+      "genre": "Drama",
+      "cast": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
+      "director": {
+        "id": 106,
+        "name": "David Fincher",
+        "isAwardWinner": false,
+        "numberOfFilms": 11,
+        "profileImageUrl": "https://example.com/images/fincher.jpg"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Interstellar",
+      "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "rating": 8.6,
+      "isAvailable": true,
+      "releaseDate": "2014-11-07",
+      "posterUrl": "https://example.com/images/interstellar.jpg",
+      "genre": "Science Fiction",
+      "cast": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
+      "director": {
+        "id": 101,
+        "name": "Christopher Nolan",
+        "isAwardWinner": true,
+        "numberOfFilms": 10,
+        "profileImageUrl": "https://example.com/images/nolan.jpg"
+      }
+    },
+    {
+      "id": 9,
+      "title": "The Matrix",
+      "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "rating": 8.7,
+      "isAvailable": true,
+      "releaseDate": "1999-03-31",
+      "posterUrl": "https://example.com/images/matrix.jpg",
+      "genre": "Science Fiction",
+      "cast": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+      "director": {
+        "id": 107,
+        "name": "Lana Wachowski",
+        "isAwardWinner": true,
+        "numberOfFilms": 8,
+        "profileImageUrl": "https://example.com/images/wachowski.jpg"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Gladiator",
+      "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "rating": 8.5,
+      "isAvailable": false,
+      "releaseDate": "2000-05-05",
+      "posterUrl": "https://example.com/images/gladiator.jpg",
+      "genre": "Action",
+      "cast": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"],
+      "director": {
+        "id": 108,
+        "name": "Ridley Scott",
+        "isAwardWinner": true,
+        "numberOfFilms": 25,
+        "profileImageUrl": "https://example.com/images/scott.jpg"
+      }
+    }
+  ]
+  

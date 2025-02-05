@@ -1,0 +1,183 @@
+[
+    {
+      "id": 101,
+      "name": "Christopher Nolan",
+      "biography": "Christopher Nolan is a British-American film director, producer, and screenwriter, known for his cerebral, often nonlinear storytelling.",
+      "age": 53,
+      "isActive": true,
+      "birthDate": "1970-07-30",
+      "profileImageUrl": "https://example.com/images/nolan.jpg",
+      "genre": "Science Fiction",
+      "hobbies": ["Photography", "Writing", "Traveling"],
+      "notableWork": {
+        "id": 1,
+        "title": "Inception",
+        "releaseYear": 2010,
+        "isAwardWinning": true,
+        "posterUrl": "https://example.com/images/inception.jpg"
+      }
+    },
+    {
+      "id": 102,
+      "name": "Francis Ford Coppola",
+      "biography": "An American film director, producer, and screenwriter, Coppola is best known for directing The Godfather trilogy.",
+      "age": 84,
+      "isActive": false,
+      "birthDate": "1939-04-07",
+      "profileImageUrl": "https://example.com/images/coppola.jpg",
+      "genre": "Crime",
+      "hobbies": ["Winemaking", "Writing", "Traveling"],
+      "notableWork": {
+        "id": 2,
+        "title": "The Godfather",
+        "releaseYear": 1972,
+        "isAwardWinning": true,
+        "posterUrl": "https://example.com/images/godfather.jpg"
+      }
+    },
+    {
+      "id": 103,
+      "name": "Quentin Tarantino",
+      "biography": "Quentin Tarantino is known for his stylized films characterized by nonlinear storylines, satirical subject matter, and an aestheticization of violence.",
+      "age": 60,
+      "isActive": true,
+      "birthDate": "1963-03-27",
+      "profileImageUrl": "https://example.com/images/tarantino.jpg",
+      "genre": "Drama",
+      "hobbies": ["Collecting vinyl records", "Watching old movies", "Writing"],
+      "notableWork": {
+        "id": 3,
+        "title": "Pulp Fiction",
+        "releaseYear": 1994,
+        "isAwardWinning": true,
+        "posterUrl": "https://example.com/images/pulpfiction.jpg"
+      }
+    },
+    {
+      "id": 104,
+      "name": "Frank Darabont",
+      "biography": "Frank Darabont is a Hungarian-American film director, screenwriter, and producer known for his film adaptations of Stephen King novellas.",
+      "age": 65,
+      "isActive": false,
+      "birthDate": "1959-01-28",
+      "profileImageUrl": "https://example.com/images/darabont.jpg",
+      "genre": "Drama",
+      "hobbies": ["Reading", "Screenwriting", "Photography"],
+      "notableWork": {
+        "id": 4,
+        "title": "The Shawshank Redemption",
+        "releaseYear": 1994,
+        "isAwardWinning": false,
+        "posterUrl": "https://example.com/images/shawshank.jpg"
+      }
+    },
+    {
+      "id": 105,
+      "name": "Robert Zemeckis",
+      "biography": "Robert Zemeckis is an American film director, producer, and screenwriter known for his innovative use of special effects.",
+      "age": 72,
+      "isActive": true,
+      "birthDate": "1952-05-14",
+      "profileImageUrl": "https://example.com/images/zemeckis.jpg",
+      "genre": "Drama",
+      "hobbies": ["Animation", "Storytelling", "Traveling"],
+      "notableWork": {
+        "id": 6,
+        "title": "Forrest Gump",
+        "releaseYear": 1994,
+        "isAwardWinning": true,
+        "posterUrl": "https://example.com/images/forrestgump.jpg"
+      }
+    },
+    {
+      "id": 106,
+      "name": "David Fincher",
+      "biography": "David Fincher is an American director known for his dark and stylish thrillers.",
+      "age": 61,
+      "isActive": true,
+      "birthDate": "1962-08-28",
+      "profileImageUrl": "https://example.com/images/fincher.jpg",
+      "genre": "Thriller",
+      "hobbies": ["Photography", "Music Videos", "Editing"],
+      "notableWork": {
+        "id": 7,
+        "title": "Fight Club",
+        "releaseYear": 1999,
+        "isAwardWinning": false,
+        "posterUrl": "https://example.com/images/fightclub.jpg"
+      }
+    },
+    {
+      "id": 107,
+      "name": "Lana Wachowski",
+      "biography": "Lana Wachowski is an American film director, known for creating The Matrix series alongside her sister Lilly.",
+      "age": 58,
+      "isActive": true,
+      "birthDate": "1965-06-21",
+      "profileImageUrl": "https://example.com/images/wachowski.jpg",
+      "genre": "Science Fiction",
+      "hobbies": ["Writing", "Comics", "Traveling"],
+      "notableWork": {
+        "id": 9,
+        "title": "The Matrix",
+        "releaseYear": 1999,
+        "isAwardWinning": true,
+        "posterUrl": "https://example.com/images/matrix.jpg"
+      }
+    },
+    {
+      "id": 108,
+      "name": "Ridley Scott",
+      "biography": "Ridley Scott is an English film director and producer, best known for his work on epic films and science fiction classics.",
+      "age": 86,
+      "isActive": true,
+      "birthDate": "1937-11-30",
+      "profileImageUrl": "https://example.com/images/scott.jpg",
+      "genre": "Action",
+      "hobbies": ["Painting", "Storyboarding", "Traveling"],
+      "notableWork": {
+        "id": 10,
+        "title": "Gladiator",
+        "releaseYear": 2000,
+        "isAwardWinning": true,
+        "posterUrl": "https://example.com/images/gladiator.jpg"
+      }
+    },
+    {
+      "id": 109,
+      "name": "Steven Spielberg",
+      "biography": "Steven Spielberg is an American film director, producer, and screenwriter, widely regarded as one of the most popular directors in film history.",
+      "age": 77,
+      "isActive": true,
+      "birthDate": "1946-12-18",
+      "profileImageUrl": "https://example.com/images/spielberg.jpg",
+      "genre": "Adventure",
+      "hobbies": ["Filmmaking", "Collecting", "Philanthropy"],
+      "notableWork": {
+        "id": 11,
+        "title": "Jurassic Park",
+        "releaseYear": 1993,
+        "isAwardWinning": true,
+        "posterUrl": "https://example.com/images/jurassicpark.jpg"
+      }
+    },
+    {
+      "id": 110,
+      "name": "James Cameron",
+      "biography": "James Cameron is a Canadian filmmaker known for his science fiction and epic films.",
+      "age": 69,
+      "isActive": true,
+      "birthDate": "1954-08-16",
+      "profileImageUrl": "https://example.com/images/cameron.jpg",
+      "genre": "Science Fiction",
+      "hobbies": ["Deep-sea exploration", "Writing", "Photography"],
+      "notableWork": {
+        "id": 12,
+        "title": "Avatar",
+        "releaseYear": 2009,
+        "isAwardWinning": true,
+        "posterUrl": "https://example.com/images/avatar.jpg"
+      }
+    }
+  ]
+  
