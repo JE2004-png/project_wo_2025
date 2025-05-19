@@ -1,0 +1,21 @@
+<%- include('partials/navbar') %>
+
+<div class="container">
+  <h1>Details van <%= director.name %></h1>
+  <img src="<%= director.image %>" alt="<%= director.name %>" width="200" />
+  <ul>
+    <li><strong>Beschrijving:</strong> <%= director.description %></li>
+    <li><strong>Leeftijd:</strong> <%= director.age %></li>
+    <li><strong>Actief:</strong> <%= director.active ? 'Ja' : 'Nee' %></li>
+    <li><strong>Geboortedatum:</strong> <%= director.birthdate %></li>
+    <li><strong>Categorie:</strong> <%= director.category %></li>
+    <li><strong>Hobby's:</strong> <%= director.hobbies.join(', ') %></li>
+  </ul>
+
+  <h2>Notabel werk</h2>
+  <% if (relatedMovie) { %>
+    <p><a href="/movie/<%= relatedMovie.id %>"><%= relatedMovie.title %></a></p>
+  <% } else { %>
+    <p>Geen gerelateerd werk gevonden.</p>
+  <% } %>
+</div>
