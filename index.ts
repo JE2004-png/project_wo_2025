@@ -3,68 +3,109 @@ import ejs from "ejs";
 
 const fs = require('fs');
 const app = express();
-const PORT = 3000;
+const mongoose = require("mongoose")
+const PORT = 3000;4
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
-
-// Middleware to parse URL-encoded bodies (for filters, etc.)
 app.use(express.urlencoded({ extended: true }));
 
-// API routes
-app.get('/api/directors', (req, res) => {
-  const data = JSON.parse(fs.readFileSync('./data/directors.json'));
-  res.json(data);
+// MongoDB connection
+mongoose.connect('mongodb://localhost:27017/directorsdb', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
-app.get('/api/movies', (req, res) => {
-  const data = JSON.parse(fs.readFileSync('./data/movies.json'));
-  res.json(data);
+const directorSchema = new mongoose.Schema({
+  id: Number,
+  name: String,
+  description: String,
+  age: Number,
+  active: Boolean,
+  birthdate: String,
+  image: String,
+  category: String,
+  hobbies: [String],
+  notableWork: {
+    id: Number,
+    title: String,
+    description: String,
+    image: String,
+    genre: String,
+    year: Number,
+    rating: Number,
+    active: Boolean
+  }
 });
 
-// Index page - overview
-app.get('/', (req, res) => {
-  const directors = JSON.parse(fs.readFileSync('./data/directors.json'));
+const Director = mongoose.model('Director', directorSchema);
+
+async function initializeDatabase() {
+  const count = await Director.countDocuments();
+  if (count === 0) {
+    const response = await fetch('http://localhost:3000/api/directors');
+    const directors = await response.json();
+    await Director.insertMany(directors);
+    console.log('Database initialized with directors');
+  }
+}
+
+// Init DB on startup
+initializeDatabase();
+
+// Routes
+app.get('/api/directors', async (req, res) => {
+  const directors = await Director.find();
+  res.json(directors);
+});
+
+app.get('/', async (req, res) => {
   const query = req.query.search || '';
   const sortBy = req.query.sortBy || 'name';
   const sortDir = req.query.dir === 'desc' ? -1 : 1;
 
-  const filtered = directors.filter(() => directors.name.toLowerCase().includes(query));
+  const directors = await Director.find({
+    name: { $regex: query, $options: 'i' }
+  }).sort({ [sortBy]: sortDir });
 
-  filtered.sort((a, b) => {
-    if (a[sortBy] < b[sortBy]) return -1 * sortDir;
-    if (a[sortBy] > b[sortBy]) return 1 * sortDir;
-    return 0;
-  });
-
-  res.render('index', { directors: filtered, search: query, sortBy, dir: sortDir });
+  res.render('index', { directors, search: query, sortBy, dir: sortDir });
 });
 
-// Detail page for a director
-app.get('/director/:id', (req, res) => {
-  const directors = JSON.parse(fs.readFileSync('./data/directors.json'));
-  const movies = JSON.parse(fs.readFileSync('./data/movies.json'));
-
-  const director = directors.find(d => d.id == req.params.id);
+app.get('/director/:id', async (req, res) => {
+  const director = await Director.findOne({ id: req.params.id });
   if (!director) return res.status(404).send('Director not found');
 
-  const relatedMovie = movies.find(m => m.id == director.notableWork.id);
-
-  res.render('directorDetail', { director, relatedMovie });
+  res.render('directorDetail', { director, relatedMovie: director.notableWork });
 });
 
-// Detail page for a movie
-app.get('/movie/:id', (req, res) => {
-  const movies = JSON.parse(fs.readFileSync('./data/movies.json'));
-  const movie = movies.find(m => m.id == req.params.id);
-  if (!movie) return res.status(404).send('Movie not found');
+app.get('/movie/:id', async (req, res) => {
+  const director = await Director.findOne({ 'notableWork.id': req.params.id });
+  if (!director) return res.status(404).send('Movie not found');
 
-  res.render('movieDetail', { movie });
+  res.render('movieDetail', { movie: director.notableWork });
 });
 
-// Navigation include
-app.get('/partials/navbar', (req, res) => {
-  res.render('partials/navbar');
+// Edit form for director
+app.get('/director/:id/edit', async (req, res) => {
+  const director = await Director.findOne({ id: req.params.id });
+  if (!director) return res.status(404).send('Director not found');
+
+  res.render('editDirector', { director });
+});
+
+app.post('/director/:id/edit', async (req, res) => {
+  const { name, age, active, category, description } = req.body;
+  await Director.findOneAndUpdate(
+    { id: req.params.id },
+    {
+      name,
+      age,
+      active: active === 'true',
+      category,
+      description
+    }
+  );
+  res.redirect(`/director/${req.params.id}`);
 });
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
