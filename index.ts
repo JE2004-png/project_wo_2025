@@ -10,7 +10,6 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
-// MongoDB connection
 mongoose.connect('mongodb://localhost:27017/directorsdb', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
